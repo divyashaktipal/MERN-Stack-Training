@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Display Input Value</title>
+</head>
+
+<body>
+
+    <label for="userInput">Enter something:</label>
+    <input type="text" id="userInput">
+    <button id="displayButton">Display</button>
+
+    <p id="displayArea"></p>
+
+    <script>
+        document.getElementById("displayButton").addEventListener("click", function () {
+
+            let inputValue = document.getElementById("userInput").value;
+
+            document.getElementById("displayArea").textContent = inputValue;
+        });
+
+    </script>
+</body>
+
+</html>

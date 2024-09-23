@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Change Background Color</title>
+    <style>
+        #myDiv {
+            width: 200px;
+            height: 200px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="myDiv"></div>
+    <script>
+        document.getElementById("myDiv").addEventListener("mouseover", function () {
+            this.style.backgroundColor = "blue";
+        });
+
+        document.getElementById("myDiv").addEventListener("mouseout", function () {
+            this.style.backgroundColor = "lightgray";
+        });
+
+    </script>
+</body>
+
+</html>

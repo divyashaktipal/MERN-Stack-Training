@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Current Time</title>
+</head>
+
+<body>
+
+    <p id="timeDisplay">Current time will be displayed here.</p>
+
+    <script>
+        function updateTime() {
+            let now = new Date();
+            let timeString = now.toLocaleTimeString();
+            document.getElementById("timeDisplay").textContent = timeString;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+
+    </script>
+</body>
+
+</html>

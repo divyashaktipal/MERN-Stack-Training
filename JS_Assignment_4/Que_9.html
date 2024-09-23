@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Retrieve HTML Content</title>
+</head>
+
+<body>
+
+    <div id="contentDiv">This is <strong>bold</strong> and this is <em>italic</em>.</div>
+    <button id="innerHTMLButton">Get innerHTML</button>
+    <button id="textContentButton">Get textContent</button>
+
+    <p id="innerHTMLDisplay"></p>
+    <p id="textContentDisplay"></p>
+
+    <script>
+
+        function displayInnerHTML() {
+            let contentDiv = document.getElementById("contentDiv");
+            let innerHTMLValue = contentDiv.innerHTML;
+            document.getElementById("innerHTMLDisplay").textContent = "innerHTML: " + innerHTMLValue;
+        }
+        function displayTextContent() {
+            let contentDiv = document.getElementById("contentDiv");
+            let textContentValue = contentDiv.textContent;
+            document.getElementById("textContentDisplay").textContent = "textContent: " + textContentValue;
+        }
+
+        document.getElementById("innerHTMLButton").addEventListener("click", displayInnerHTML);
+        document.getElementById("textContentButton").addEventListener("click", displayTextContent);
+
+    </script>
+</body>
+
+</html>

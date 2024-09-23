@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Change Paragraph Text</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>
+            <p id="myParagraph">This is the original text.</p>
+            <button id="myButton">Changed Text</button>
+        </h1>
+    </center>
+
+    <script>
+        document.getElementById("myButton").addEventListener("click", function () {
+            document.getElementById("myParagraph").textContent = "The text has been changed!";
+        });
+
+    </script>
+</body>
+
+</html>

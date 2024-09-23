@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Toggle Visibility</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="toggleDiv" class="hidden">This is a toggleable element.</div>
+    <button id="toggleButton">Toggle Visibility</button>
+
+    <script>
+        document.getElementById("toggleButton").addEventListener("click", function () {
+            let toggleDiv = document.getElementById("toggleDiv");
+            toggleDiv.classList.toggle("hidden");
+        });
+
+    </script>
+</body>
+
+</html>
